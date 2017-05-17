@@ -1,11 +1,15 @@
+"""Converts the raw images to cifar input data format.
+author: Louie
+"""
+
 import os
 import tensorflow as tf
 import random
-import matplotlib
+#import matplotlib
 
 # matplotlib.use('Qt5Agg')
-matplotlib.use('tkagg')
-import matplotlib.pyplot as plt
+#matplotlib.use('tkagg')
+#import matplotlib.pyplot as plt
 import numpy as np
 
 FLAGS = tf.app.flags.FLAGS
