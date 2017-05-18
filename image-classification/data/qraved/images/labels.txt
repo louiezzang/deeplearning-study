@@ -1,4 +1,5 @@
 food
 people
 face
-poster
+promo
+ambience
