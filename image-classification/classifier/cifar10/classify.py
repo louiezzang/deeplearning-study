@@ -35,7 +35,7 @@ def evaluate(img_path):
     images = tf.expand_dims(float_image, 0)
 
     logits = cifar10.inference_one(images)
-    _, top_k_pred = tf.nn.top_k(logits, k=4)
+    _, top_k_pred = tf.nn.top_k(logits, k=config.NUM_LABEL_CLASSES)
 
     # Restore the moving average version of the learned variables for eval.
     variable_averages = tf.train.ExponentialMovingAverage(cifar10.MOVING_AVERAGE_DECAY)
@@ -57,7 +57,7 @@ def evaluate(img_path):
 
       result = {}
       for key, value in enumerate(top_indices[0]):
-        print(value + ": " + str(_[0][key]))  # value: label index
+        print(str(value) + ": " + str(_[0][key]))  # value: label index
         result[value] = _[0][key]
 
       return result

@@ -69,6 +69,7 @@ def convert_images(sess, data_set):
       try:
         image = sess.run(resized_image)
       except Exception as e:
+        print "failed to convert image:", filename_set[i][1]
         print e.message
         continue
 

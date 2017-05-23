@@ -1,3 +1,7 @@
+"""Download Instagram images to train.
+author: Louie
+"""
+
 import os
 import sys, getopt
 import MySQLdb

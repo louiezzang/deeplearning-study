@@ -23,6 +23,7 @@ import os
 
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
+import config
 
 # Process images of this size. Note that this differs from the original CIFAR
 # image size of 32 x 32. If one alters this number, then the entire model
@@ -31,7 +32,7 @@ IMAGE_SIZE = 32 #24
 
 # Global constants describing the CIFAR-10 data set.
 #NUM_CLASSES = 10
-NUM_CLASSES = 4 # modified by louie
+NUM_CLASSES = config.NUM_LABEL_CLASSES  # modified by louie
 NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN = 50000
 NUM_EXAMPLES_PER_EPOCH_FOR_EVAL = 10000
 

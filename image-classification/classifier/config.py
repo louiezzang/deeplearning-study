@@ -1,3 +1,7 @@
+"""Read configuration.
+author: Louie
+"""
+
 import os
 import ConfigParser
 

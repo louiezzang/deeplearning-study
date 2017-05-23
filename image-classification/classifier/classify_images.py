@@ -1,3 +1,7 @@
+"""Classify the raw images.
+author: Louie
+"""
+
 import os, sys, getopt
 import MySQLdb
 import urllib

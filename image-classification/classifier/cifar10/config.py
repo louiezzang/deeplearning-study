@@ -1,4 +1,4 @@
-PROJECT_HOME = '/Users/louie/Documents/projects/nextmining/deeplearning-study/image-classification'
+PROJECT_HOME = '/Users/louie/Documents/projects/qraved/qraved-image-classification'
 
 DATA_DIR = PROJECT_HOME + '/data/qraved/cifar10_data'
 
@@ -9,3 +9,5 @@ CHECKPOINT_DIR = PROJECT_HOME + '/data/qraved/cifar10_train'
 TRAIN_DIR = PROJECT_HOME + '/data/qraved/cifar10_train'
 
 IMAGE_DIR = PROJECT_HOME + '/data/qraved/images'
+
+NUM_LABEL_CLASSES = 5
