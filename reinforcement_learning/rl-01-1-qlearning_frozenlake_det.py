@@ -6,9 +6,12 @@ http://hunkim.github.io/ml/RL/rl-l04.pdf
 https://www.youtube.com/watch?v=VYOq-He90bE&feature=youtu.be
 https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0
 """
-
 import gym
 import numpy as np
+# For MacOs --> Start
+import matplotlib
+matplotlib.use('TkAgg')
+# <-- End
 import matplotlib.pyplot as plt
 from gym.envs.registration import register
 
